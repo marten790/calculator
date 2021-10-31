@@ -1,0 +1,49 @@
+.container,
+.buttons button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.container {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.logo {
+  color: white;
+  background-color: #1795d4;
+  padding: 15px;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.screen {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(5, 80px);
+}
+button {
+  background-color: white;
+}
+.bg-grey {
+  background-color: #ded7d7;
+}
+button:hover {
+  cursor: pointer;
+  box-shadow: inset 0 0 10px #000000;
+  transition: all 0.3s ease 0s;
+}
+.equals {
+  background-color: #1795d4;
+  grid-column: 4;
+  grid-row: 2 / 6;
+}

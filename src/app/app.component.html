@@ -1,23 +1,30 @@
 <div class="container">
-  <div class="logo"></div>
-  <div class="screen">{{ default }}</div>
+  <div class="logo"><img src="../assets/logo.svg" alt="Equal Experts" /></div>
+  <div class="screen">
+    {{ currentDigit ? currentDigit : previousDigit || default }}
+    <!-- TODO:
+    Basic:
+    Show current symbol in view to make clear what needs to be clicked next
+    Advanced:
+    Show calculation history  -->
+  </div>
   <div class="buttons">
-    <button>+</button>
-    <button>-</button>
-    <button>X</button>
-    <button>/</button>
-    <button>=</button>
-    <button>1</button>
-    <button>2</button>
-    <button>3</button>
-    <button>4</button>
-    <button>5</button>
-    <button>6</button>
-    <button>7</button>
-    <button>8</button>
-    <button>9</button>
-    <button>0</button>
-    <button>.</button>
-    <button>CE</button>
+    <button (click)="symbolClicked('plus')" class="bg-grey">+</button>
+    <button (click)="symbolClicked('minus')" class="bg-grey">-</button>
+    <button (click)="symbolClicked('times')" class="bg-grey">x</button>
+    <button (click)="symbolClicked('divide')" class="bg-grey">/</button>
+    <button (click)="equalClicked()" class="equals">=</button>
+    <button (click)="digitClicked('1')">1</button>
+    <button (click)="digitClicked('2')">2</button>
+    <button (click)="digitClicked('3')">3</button>
+    <button (click)="digitClicked('4')">4</button>
+    <button (click)="digitClicked('5')">5</button>
+    <button (click)="digitClicked('6')">6</button>
+    <button (click)="digitClicked('7')">7</button>
+    <button (click)="digitClicked('8')">8</button>
+    <button (click)="digitClicked('9')">9</button>
+    <button (click)="digitClicked('0')">0</button>
+    <button (click)="digitClicked('.')">.</button>
+    <button (click)="clear()" class="bg-grey">CE</button>
   </div>
 </div>
