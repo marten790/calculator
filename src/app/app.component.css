@@ -9,16 +9,6 @@
   margin: 0 auto;
 }
 
-.logo {
-  color: white;
-  background-color: #1795d4;
-  padding: 15px;
-}
-
-.logo img {
-  width: 120px;
-}
-
 .screen {
   background-color: black;
   color: white;
@@ -43,7 +33,7 @@ button:hover {
   transition: all 0.3s ease 0s;
 }
 .equals {
-  background-color: #1795d4;
+  background-color: rgb(255, 196, 0);
   grid-column: 4;
   grid-row: 2 / 6;
 }
